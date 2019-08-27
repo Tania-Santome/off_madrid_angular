@@ -1,1 +1,12 @@
-<p>estoy en el menu</p>
+<a class="hamburguer" (click)="showMenu()"> &#9776;</a>
+<a class="close" [ngClass]="{'menu_active': mostrarMenu}" (click)="closeMenu()">&#10006;</a>
+
+<nav class="menu" [ngClass]="{'menu_active': mostrarMenu}">
+
+    <ul class="menu_list">
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a a routerLink="/teatros" routerLinkActive="active">Theatres</a></li>
+        <li><a href="">Maps</a></li>
+        <li><a href="">Home</a></li>
+    </ul>
+</nav>

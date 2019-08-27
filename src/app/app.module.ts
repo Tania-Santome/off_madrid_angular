@@ -6,10 +6,9 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './template/menu/menu.component';
 import { HeroComponent } from './template/hero/hero.component';
 import { FooterComponent } from './template/footer/footer.component';
-import { AboutComponent } from './about/about.component';
-import { EventListComponent } from './events/event-list/event-list.component';
-import { EventCreateComponent } from './events/event-create/event-create.component';
-import { EventUpdateComponent } from './events/event-update/event-update.component';
+import { AboutComponent } from './pages/about/about.component';
+import { MainComponent } from './pages/main/main.component';
+import { TheatreComponent } from './pages/theatre/theatre.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +17,8 @@ import { EventUpdateComponent } from './events/event-update/event-update.compone
     HeroComponent,
     FooterComponent,
     AboutComponent,
-    EventListComponent,
-    EventCreateComponent,
-    EventUpdateComponent
+    MainComponent,
+    TheatreComponent
   ],
   imports: [
     BrowserModule,
