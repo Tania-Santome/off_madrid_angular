@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
 }
+
 html {
     font-size: 62.5%;
 }
@@ -28,4 +29,56 @@ p {
     width: 80rem;
     margin: 0 auto;
 
+}
+
+/*griddddd*/
+
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.aling-items-center{
+    align-items: center;
+}
+
+.row{
+    display:flex;
+}
+
+.col-8{
+    width: 60%;
+}
+.col-6{
+    width: 50%;
+
+}
+
+.col-4{
+    width: 30%;
+}
+
+.p-1{
+padding: 1rem;
+
+}
+.p-2{
+
+    padding: 2rem;
+
+}
+/* helpers */
+.center{
+    text-align: center;
+}
+
+/* layaut */
+section{
+
+    background-color: rgba(255, 255, 255, 0.571);
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+    padding: 2rem;
 }

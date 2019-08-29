@@ -10,6 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { MainComponent } from './pages/main/main.component';
 import { TheatreComponent } from './pages/theatre/theatre.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { TheatreComponent } from './pages/theatre/theatre.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
