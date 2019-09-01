@@ -1,5 +1,9 @@
-<a class="hamburguer" (click)="showMenu()"> &#9776;</a>
-<a class="close" [ngClass]="{'menu_active': mostrarMenu}" (click)="closeMenu()">&#10006;</a>
+<a class="hamburguer" (click)="showMenu()">
+    <i class="fa fa-bars"></i>
+</a>
+<a class="close" [ngClass]="{'menu_active': mostrarMenu}" (click)="closeMenu()">
+    <i class="fa fa-times" aria-hidden="true"></i>
+</a>
 
 <nav class="menu" [ngClass]="{'menu_active': mostrarMenu}">
 

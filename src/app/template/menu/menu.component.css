@@ -1,5 +1,7 @@
 .hamburguer{
     font-size: 4rem;
+    float: right;
+    padding: 30px 30px;
 }
 
 .menu{
@@ -17,11 +19,15 @@
 }
 
 .close{
-    color: blue;
+    color: black;
     font-size: 4rem;
-    display: none;
+    display: none; 
     position: fixed;
     z-index: 1200;
+    margin: 30px 30px;
+    
+    
+
 
 }
 
