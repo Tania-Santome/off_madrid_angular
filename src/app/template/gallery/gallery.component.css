@@ -1,0 +1,23 @@
+.gallery{
+    background-color: rgba(249, 244, 227, 0.927);
+}
+.gallery__item{
+    position: relative;
+    overflow: hidden;
+}
+.gallery__description{
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(235, 2, 2, 0.0);
+    top: 0em;
+    bottom: 0em;
+    right: 0em;
+    left: 0em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    transition: all .5s;
+}
+.gallery__description:hover{
+    opacity: 1;
+    background-color: rgba(235, 2, 2, 0.701);
+}

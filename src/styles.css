@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 
-}
 
+}
+/* esto es para que las imagenes se ajusten al contenedor que les hemos designado */
+img{
+    width: 100%;
+    display: block;
+}
 
 @font-face {
     font-family: 'abril_fatfaceregular';
@@ -37,7 +42,7 @@ p {
 }
 
 .container {
-    width: 80rem;
+    width: 100rem;
     margin: 0 auto;
 
 }
@@ -57,6 +62,7 @@ p {
 
 .row{
     display:flex;
+    flex-wrap: wrap;
 }
 
 .col-8{
@@ -70,7 +76,10 @@ p {
 .col-4{
     width: 30%;
 }
+.col-3{
 
+    width: 25%;
+}
 .p-1{
 padding: 1rem;
 

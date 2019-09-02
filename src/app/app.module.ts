@@ -9,6 +9,7 @@ import { FooterComponent } from './template/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { MainComponent } from './pages/main/main.component';
 import { TheatreComponent } from './pages/theatre/theatre.component';
+import { GalleryComponent } from './template/gallery/gallery.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TheatreComponent } from './pages/theatre/theatre.component';
     FooterComponent,
     AboutComponent,
     MainComponent,
-    TheatreComponent
+    TheatreComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

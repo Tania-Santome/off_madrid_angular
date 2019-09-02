@@ -3,6 +3,7 @@
     position: fixed;
     right: 3rem;
     top: 3rem;
+    z-index: 10;
 }
 
 .menu{

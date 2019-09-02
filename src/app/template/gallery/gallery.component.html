@@ -1,0 +1,16 @@
+<div class="gallery">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-3 p-2" *ngFor="let evento of listaEventos">
+                <div class="gallery__item">
+                    <img [src]="evento.image" alt="teatro">
+                    <div class="gallery__description">
+                        <p>{{evento.name}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
