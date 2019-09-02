@@ -8,6 +8,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 1rem;
+   
     
     /*esto es para cenrarlo del todo*/
     transform: translate(-50%,-50%)

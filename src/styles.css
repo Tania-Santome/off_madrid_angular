@@ -5,6 +5,17 @@
 
 }
 
+
+@font-face {
+    font-family: 'abril_fatfaceregular';
+    src:url('assets/fonts/AbrilFatface-Regular.otf') format('otf'), 
+    url('assets/fonts/abrilfatface-regular.woff') format('woff2'),
+         url('assets/fonts/abrilfatface-regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
     font-size: 62.5%;
 }
