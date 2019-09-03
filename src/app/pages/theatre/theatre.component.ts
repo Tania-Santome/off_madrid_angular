@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LocationService } from 'src/app/service/location.service';
+import { Location } from 'src/app/model/Location';
 
 @Component({
   selector: 'app-theatre',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TheatreComponent implements OnInit {
 
-  constructor() { }
+  listaLocations: Location[];
+
+  constructor(private locationService: LocationService) { }
+
 
   ngOnInit() {
-  }
+    this.locationService.getAll()
+      .then(response => {
+        this.listaLocations = response;
+      })
+      .catch(error => {
+        console.log(error);
+      })
 
+  }
 }
