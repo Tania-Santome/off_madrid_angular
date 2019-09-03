@@ -14,7 +14,15 @@ export class GalleryComponent implements OnInit {
   constructor(private eventService: EventService) { }
 
   ngOnInit() {
-    this.listaEventos = this.eventService.getAll();
-  }
+    this.eventService.getAll()
+      .then(response => {
+        this.listaEventos = response;
+      })
+      .catch(error => {
+        console.log(error);
+      })
 
+  }
 }
+
+

@@ -1,21 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Event } from '../model/Event';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EventService {
-  listaEventos: Event[];
-  constructor() {
-    this.listaEventos = [
-      { name: "hdahdks", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0mCWKDL0vqc47KUAFvZ8PTIPzC8ty7MJJD9pnQZJ8X6-Zb8a5" },
-      { name: "hdahdks", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0mCWKDL0vqc47KUAFvZ8PTIPzC8ty7MJJD9pnQZJ8X6-Zb8a5" },
-      { name: "hdahdks", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0mCWKDL0vqc47KUAFvZ8PTIPzC8ty7MJJD9pnQZJ8X6-Zb8a5" },
-      { name: "hdahdks", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0mCWKDL0vqc47KUAFvZ8PTIPzC8ty7MJJD9pnQZJ8X6-Zb8a5" },
-      { name: "hdahdks", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0mCWKDL0vqc47KUAFvZ8PTIPzC8ty7MJJD9pnQZJ8X6-Zb8a5" },
-    ]
+  url: string;
+  constructor(private http: HttpClient) {
+    this.url = "http://localhost:3030/events";
+
   }
-  getAll() {
-    return this.listaEventos;
+  getAll(): Promise<Event[]> {
+    return this.http.get<Event[]>(this.url).toPromise();
   }
+
+
+
 }
