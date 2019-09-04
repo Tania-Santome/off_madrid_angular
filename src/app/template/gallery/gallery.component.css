@@ -1,9 +1,11 @@
 .gallery{
-    background-color: rgba(249, 244, 227, 0.927);
+    background-color: rgb(0, 0, 0);
 }
 .gallery__item{
     position: relative;
     overflow: hidden;
+   
+    
 }
 .gallery__description{
     opacity: 0;

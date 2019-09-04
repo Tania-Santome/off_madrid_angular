@@ -1,11 +1,14 @@
 <div class="container">
     <section>
         <h1>maravillosa lista de teatros</h1>
+        <div class="row">
+            <div class="col-3 " *ngFor="let location of listaLocations">
+                <p>{{location.name}}</p>
+                <p>{{location.address}}</p>
+            </div>
+
+
+        </div>
     </section>
-    <div class="row">
 
-
-
-
-    </div>
 </div>
