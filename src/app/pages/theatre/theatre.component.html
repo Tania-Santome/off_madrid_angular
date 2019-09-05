@@ -1,10 +1,11 @@
 <div class="container">
     <section>
-        <h1>maravillosa lista de teatros</h1>
+        <h1 class="main_title py-2">Theatres</h1>
         <div class="row">
             <div class="col-3 " *ngFor="let location of listaLocations">
-                <p>{{location.name}}</p>
+                <h2><a [href]="location.url">{{location.name}}</a></h2>
                 <p>{{location.address}}</p>
+                <!-- <a [href]="location.url"></a> -->
             </div>
 
 

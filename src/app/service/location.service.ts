@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Location } from '../model/Location';
 import { HttpClient } from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
 })
 export class LocationService {
   url: string;
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:3030/locations";
+    this.url = "http://localhost:3333/api/locations";
   }
 
   getAll(): Promise<Location[]> {

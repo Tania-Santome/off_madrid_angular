@@ -24,4 +24,8 @@ export class TheatreComponent implements OnInit {
       })
 
   }
+
+  rutaCompletaImagen(nombreImagen) {
+    return "http://off.azr.es/locations/" + nombreImagen
+  }
 }
