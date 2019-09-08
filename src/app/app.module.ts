@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { MainComponent } from './pages/main/main.component';
 import { TheatreComponent } from './pages/theatre/theatre.component';
 import { GalleryComponent } from './template/gallery/gallery.component';
+import { EventCreateComponent } from './event/event-create/event-create.component';
 
 
 @NgModule({
@@ -22,12 +24,15 @@ import { GalleryComponent } from './template/gallery/gallery.component';
     AboutComponent,
     MainComponent,
     TheatreComponent,
-    GalleryComponent
+    GalleryComponent,
+    EventCreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
