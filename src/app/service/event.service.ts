@@ -8,13 +8,17 @@ import { HttpClient } from '@angular/common/http';
 export class EventService {
   url: string;
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:3030/events";
+    // esto es lo que hicimos al principio 
+    this.url = "http://off.azr.es/api/events";
+    // this.url = "http://localhost:3333/api/events";
 
   }
   getAll(): Promise<Event[]> {
     return this.http.get<Event[]>(this.url).toPromise();
   }
 
-
+  createEvent(evento: Event): Promise<any> {
+    return this.http.post<any>(this.url, evento).toPromise();
+  }
 
 }

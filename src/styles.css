@@ -5,11 +5,20 @@
 
 
 }
+
+*:focus{
+    outline: none;
+}
+
 /* esto es para que las imagenes se ajusten al contenedor que les hemos designado */
+
+
 img{
     width: 100%;
     display: block;
 }
+
+
 
 @font-face {
     font-family: 'abril_fatfaceregular';
@@ -20,29 +29,43 @@ img{
     font-style: normal;
 
 }
-
+/* esto es para equiparar los rem a los píxeles */
 html {
     font-size: 62.5%;
 }
+
 body {
     font-size: 1.6rem;
    font-family: 'Courier New', Courier, monospace;
-    background-image: url("assets/images/OFF4.jpg");
+    background-image: url("assets/images/aaa.jpeg");
     background-position: top;
     background-size: cover;
+
+}
+
+.main_title{
+
+    font-size: 6rem;
 
 }
 
 p {
     font-size: 1.6rem;
 }
-
+a{
+    text-decoration: none;
+    color: black
+}
+a:hover{
+    text-decoration: none;
+    color: #f51301;
+}
 .container-fluid {
     width: 100%;
 }
 
 .container {
-    width: 100rem;
+    width: 110rem;
     margin: 0 auto;
 
 }
@@ -80,6 +103,12 @@ p {
 
     width: 25%;
 }
+.col-2{
+    width: 16.66%;
+}
+.p-05{
+    padding: 0.5rem;
+}
 .p-1{
 padding: 1rem;
 
@@ -89,9 +118,51 @@ padding: 1rem;
     padding: 2rem;
 
 }
+
+.py-2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 /* helpers */
 .center{
     text-align: center;
+}
+.offset-4{
+    margin-left:30%;
+}
+/* componentes de formularios */
+
+.form-group{
+    padding: 2rem 0;
+}
+
+.form-group input{
+    padding: 1rem;
+    width: 80%;
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid #980a10
+
+}
+
+
+
+.col-form-label{
+    padding: 1rem;
+    text-align: right;
+  
+}
+/* componentes, botones */
+.btn{
+    padding: 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid white;
+}
+.btn-primary{
+    border: 2px solid #980a10;
+    color:  white;
+    background-color: #980a10;
 }
 
 /* layaut */
@@ -101,4 +172,5 @@ section{
     margin-top: 10rem;
     margin-bottom: 20rem;
     padding: 2rem;
+    min-height: 60rem;
 }

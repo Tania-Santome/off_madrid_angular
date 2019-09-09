@@ -23,6 +23,10 @@ export class GalleryComponent implements OnInit {
       })
 
   }
+
+  rutaCompletaImagen(nombreImagen) {
+    return "http://off.azr.es/images/" + nombreImagen
+  }
 }
 
 
