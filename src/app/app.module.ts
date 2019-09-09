@@ -13,6 +13,8 @@ import { MainComponent } from './pages/main/main.component';
 import { TheatreComponent } from './pages/theatre/theatre.component';
 import { GalleryComponent } from './template/gallery/gallery.component';
 import { EventCreateComponent } from './event/event-create/event-create.component';
+import { ShowEventComponent } from './event/show-event/show-event.component';
+import { EventUpdateComponent } from './event/event-update/event-update.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { EventCreateComponent } from './event/event-create/event-create.componen
     MainComponent,
     TheatreComponent,
     GalleryComponent,
-    EventCreateComponent
+    EventCreateComponent,
+    ShowEventComponent,
+    EventUpdateComponent
   ],
   imports: [
     BrowserModule,

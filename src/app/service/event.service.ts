@@ -17,8 +17,15 @@ export class EventService {
     return this.http.get<Event[]>(this.url).toPromise();
   }
 
+  getById(id: number): Promise<any> {
+    console.log('aquí estamos', id);
+    return this.http.get<Promise<any>>(this.url + '/' + id).toPromise();
+  }
+
   createEvent(evento: Event): Promise<any> {
     return this.http.post<any>(this.url, evento).toPromise();
   }
+
+
 
 }

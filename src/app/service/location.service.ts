@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class LocationService {
   url: string;
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:3333/api/locations";
+    this.url = "http://off.azr.es/api/locations";
   }
 
   getAll(): Promise<Location[]> {
