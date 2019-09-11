@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { EventService } from 'src/app/service/event.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-event-create',
@@ -14,7 +15,7 @@ export class EventCreateComponent implements OnInit {
   formulario: FormGroup;
 
 
-  constructor(private eventService: EventService) {
+  constructor(private eventService: EventService, private activatedRoute: ActivatedRoute, private router: Router) {
     this.formulario = new FormGroup({
 
       location_id: new FormControl(1, [

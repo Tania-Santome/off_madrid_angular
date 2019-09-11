@@ -14,5 +14,7 @@ export class LocationService {
   getAll(): Promise<Location[]> {
     return this.http.get<Location[]>(this.url).toPromise();
   }
-
+  createLocation(location: Location): Promise<any> {
+    return this.http.post<any>(this.url, location).toPromise();
+  }
 }

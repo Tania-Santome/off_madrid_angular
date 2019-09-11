@@ -6,6 +6,8 @@ import { TheatreComponent } from './pages/theatre/theatre.component';
 import { EventCreateComponent } from './event/event-create/event-create.component';
 import { ShowEventComponent } from './event/show-event/show-event.component';
 import { EventUpdateComponent } from './event/event-update/event-update.component';
+import { LocationCreateComponent } from './location/location-create/location-create.component';
+import { LocationUpdateComponent } from './location/location-update/location-update.component';
 
 
 const routes: Routes = [
@@ -15,9 +17,18 @@ const routes: Routes = [
   { path: 'main', component: MainComponent },
   { path: 'about', component: AboutComponent },
   { path: 'teatros', component: TheatreComponent },
-  { path: 'evento', component: EventCreateComponent },
+
+  // rutas de los eventos
+
+  { path: 'evento/create', component: EventCreateComponent },
   { path: 'evento/:id', component: ShowEventComponent },
-  { path: 'evento/:id/update', component: EventUpdateComponent },
+  { path: 'evento/update/:id', component: EventUpdateComponent },
+
+  // rutas de los teatros
+  { path: 'location/create', component: LocationCreateComponent },
+  { path: 'location/update/:id', component: LocationUpdateComponent },
+
+
 ];
 
 @NgModule({

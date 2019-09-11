@@ -1,4 +1,5 @@
 export class Event {
+    location_id: number;
     name: string;
     type: string;
     start_date: Date;
@@ -6,4 +7,7 @@ export class Event {
     description: string;
     image: string;
     price: number;
+    id: number;
+
+    constructor() { };
 }

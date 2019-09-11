@@ -49,6 +49,7 @@ body {
 
 }
 
+
 p {
     font-size: 1.6rem;
 }
@@ -60,6 +61,8 @@ a:hover{
     text-decoration: none;
     color: #f51301;
 }
+
+
 .container-fluid {
     width: 100%;
 }
@@ -106,6 +109,11 @@ a:hover{
 .col-2{
     width: 16.66%;
 }
+
+.up{
+    padding-top: 4rem;
+}
+
 .p-05{
     padding: 0.5rem;
 }
