@@ -27,6 +27,8 @@
     font-size: 4rem;
     display: none; 
     position: fixed;
+    right: 3rem;
+    top: 3rem;
     z-index: 1200;
     margin: 30px 30px;
 
