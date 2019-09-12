@@ -1,0 +1,20 @@
+<a class="avatar" routerLink="/users/profile" *ngIf="userService.isUserLogged()">&#9786;</a>
+<a class="avatar" routerLink="/users/login" *ngIf="!userService.isUserLogged()">&#9785;</a>
+
+
+<a class="hamburguer" (click)="showMenu()">
+    <i class="fa fa-bars"></i>
+</a>
+<a class="close" [ngClass]="{'menu_active': mostrarMenu}" (click)="closeMenu()">
+    <i class="fa fa-times" aria-hidden="true"></i>
+</a>
+
+<nav class="menu" [ngClass]="{'menu_active': mostrarMenu}">
+
+    <ul class="menu_list">
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a a routerLink="/teatros" routerLinkActive="active">Theatres</a></li>
+        <li><a href="">Maps</a></li>
+        <li><a href="">Home</a></li>
+    </ul>
+</nav>

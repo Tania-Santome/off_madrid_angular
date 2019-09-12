@@ -1,0 +1,17 @@
+<div class="gallery">
+    <div class="container">
+        <div class="row up">
+
+            <div class="col-3 p-05 " *ngFor="let evento of listaEventos">
+                <div class="gallery__item">
+                    <img [src]="rutaCompletaImagen(evento.image)" [alt]="evento.name">
+                    <div class="gallery__description">
+                        <p>{{evento.name}}</p>
+                        <a [routerLink]="['/evento',evento.id]">ir la evento{{evento.id}}</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

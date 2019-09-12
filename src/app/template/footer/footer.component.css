@@ -1,0 +1,34 @@
+
+.social-footer {
+    padding: 1rem;
+    background-color:black;; 
+}
+  
+.social-footer__logo {
+    margin-left: 5rem;
+}
+
+.social-footer__icons {
+
+    background-color:black;
+    
+    
+}
+
+.social-footer__icons a {
+    color: white;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 4rem;
+}
+
+.social-footer__icons .fa {
+    font-size: 2.3rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .social-footer__icons .fa:hover {
+    color: #ff0000;
+    transition: color 0.2s ease-in;
+  }
