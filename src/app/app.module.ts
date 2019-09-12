@@ -15,6 +15,11 @@ import { GalleryComponent } from './template/gallery/gallery.component';
 import { EventCreateComponent } from './event/event-create/event-create.component';
 import { ShowEventComponent } from './event/show-event/show-event.component';
 import { EventUpdateComponent } from './event/event-update/event-update.component';
+import { LocationCreateComponent } from './location/location-create/location-create.component';
+import { LocationUpdateComponent } from './location/location-update/location-update.component';
+import { LoginComponent } from './users/login/login.component';
+import { RegisterComponent } from './users/register/register.component';
+import { ProfileComponent } from './users/profile/profile.component';
 
 
 @NgModule({
@@ -29,7 +34,12 @@ import { EventUpdateComponent } from './event/event-update/event-update.componen
     GalleryComponent,
     EventCreateComponent,
     ShowEventComponent,
-    EventUpdateComponent
+    EventUpdateComponent,
+    LocationCreateComponent,
+    LocationUpdateComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

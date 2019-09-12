@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { EventService } from 'src/app/service/event.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Event } from 'src/app/model/Event';
@@ -14,10 +14,11 @@ export class EventUpdateComponent implements OnInit {
   evento: Event;
   formulario: FormGroup;
 
-  constructor(private eventService: EventService, private activatedRoute: ActivatedRoute) {
+  constructor(private eventService: EventService, private activatedRoute: ActivatedRoute, private router: Router) {
+    this.evento = new Event();
     this.formulario = new FormGroup({
 
-      location_id: new FormControl(1, [
+      location_id: new FormControl("", [
         Validators.required
       ]),
 
@@ -36,7 +37,7 @@ export class EventUpdateComponent implements OnInit {
         Validators.maxLength(15)
       ]),
 
-      end_date: new FormControl('1', [
+      end_date: new FormControl('', [
         Validators.required,
         Validators.maxLength(15)
       ]),
@@ -56,6 +57,10 @@ export class EventUpdateComponent implements OnInit {
         Validators.maxLength(15)
       ]),
 
+      id: new FormControl("", [
+        Validators.required
+      ]),
+
     })
 
   }
@@ -63,14 +68,15 @@ export class EventUpdateComponent implements OnInit {
   ngOnInit() {
 
     this.activatedRoute.params.subscribe(params => {
-      console.log(params);
+
 
 
       this.eventService.getById(params.id)
         .then(response => {
-          console.log(response)
+
           this.evento = response;
 
+          this.formulario.controls['location_id'].setValue(this.evento.location_id);
           this.formulario.controls['name'].setValue(this.evento.name);
           this.formulario.controls['type'].setValue(this.evento.type);
           this.formulario.controls['start_date'].setValue(this.evento.start_date);
@@ -78,13 +84,24 @@ export class EventUpdateComponent implements OnInit {
           this.formulario.controls['image'].setValue(this.evento.image);
           this.formulario.controls['description'].setValue(this.evento.description);
           this.formulario.controls['price'].setValue(this.evento.price);
+          this.formulario.controls['id'].setValue(this.evento.id);
 
-          console.log(this.formulario.value);
+
         })
         .catch((err) => {
           console.log(err);
         })
     });
   }
+  onSubmit() {
 
+    this.eventService.updateEvent(this.formulario.value)
+      .then(response => {
+        console.log(response);
+        this.router.navigate(['/main']);
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
 }

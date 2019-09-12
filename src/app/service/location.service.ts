@@ -15,4 +15,19 @@ export class LocationService {
     return this.http.get<Location[]>(this.url).toPromise();
   }
 
+  getById(id: number): Promise<any> {
+    console.log('aquí estamos', id);
+    return this.http.get<Promise<any>>(this.url + '/' + id).toPromise();
+  }
+
+  createLocation(location: Location): Promise<any> {
+    return this.http.post<any>(this.url, location).toPromise();
+  }
+  updateLocation(location: Event): Promise<any> {
+    return this.http.put<any>(this.url, location).toPromise();
+  }
+
+  deleteLocation(location: Location): Promise<any> {
+    return this.http.delete<any>(this.url + "/" + location.id).toPromise();
+  }
 }

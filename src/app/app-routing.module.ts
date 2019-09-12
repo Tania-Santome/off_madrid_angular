@@ -6,6 +6,12 @@ import { TheatreComponent } from './pages/theatre/theatre.component';
 import { EventCreateComponent } from './event/event-create/event-create.component';
 import { ShowEventComponent } from './event/show-event/show-event.component';
 import { EventUpdateComponent } from './event/event-update/event-update.component';
+import { LocationCreateComponent } from './location/location-create/location-create.component';
+import { LocationUpdateComponent } from './location/location-update/location-update.component';
+import { LoginComponent } from './users/login/login.component';
+import { RegisterComponent } from './users/register/register.component';
+import { ProfileComponent } from './users/profile/profile.component';
+import { LoginGuard } from './login.guard';
 
 
 const routes: Routes = [
@@ -15,9 +21,22 @@ const routes: Routes = [
   { path: 'main', component: MainComponent },
   { path: 'about', component: AboutComponent },
   { path: 'teatros', component: TheatreComponent },
-  { path: 'evento', component: EventCreateComponent },
-  { path: 'evento/:id', component: ShowEventComponent },
-  { path: 'evento/:id/update', component: EventUpdateComponent },
+
+  // rutas de los eventos
+
+  { path: 'evento/create', component: EventCreateComponent, canActivate: [LoginGuard] },
+  { path: 'evento/:id', component: ShowEventComponent, canActivate: [LoginGuard] },
+  { path: 'evento/update/:id', component: EventUpdateComponent, canActivate: [LoginGuard] },
+
+  // rutas de los teatros
+  { path: 'location/create', component: LocationCreateComponent, canActivate: [LoginGuard] },
+  { path: 'location/update/:id', component: LocationUpdateComponent, canActivate: [LoginGuard] },
+
+  //rutas de los users
+  { path: 'users/login', component: LoginComponent },
+  { path: 'users/register', component: RegisterComponent },
+  { path: 'users/profile', component: ProfileComponent, canActivate: [LoginGuard] },
+
 ];
 
 @NgModule({

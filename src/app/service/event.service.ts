@@ -26,6 +26,12 @@ export class EventService {
     return this.http.post<any>(this.url, evento).toPromise();
   }
 
+  updateEvent(evento: Event): Promise<any> {
+    return this.http.put<any>(this.url, evento).toPromise();
+  }
 
+  deleteEvent(evento: Event): Promise<any> {
+    return this.http.delete<any>(this.url + "/" + evento.id).toPromise();
+  }
 
 }

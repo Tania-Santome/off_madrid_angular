@@ -4,6 +4,17 @@
     right: 3rem;
     top: 3rem;
     z-index: 10;
+    
+}
+
+.avatar{
+    font-size: 9rem;
+    position: fixed;
+    left: 3rem;
+    top: 3rem;
+    z-index: 10;
+    color: tomato;
+    
 }
 
 .menu{
@@ -15,7 +26,7 @@
     z-index: 999;
     width: 100%;
     height: 100%;
-    background-color: rgb(198, 198, 198);
+    background-color: rgb(0, 0, 0);
     font-family:  'Abril Fatface', cursive;
     
     
@@ -23,17 +34,19 @@
 }
 
 .close{
-    color: black;
+    color: white;
     font-size: 4rem;
     display: none; 
     position: fixed;
+    right: 3rem;
+    top: 3rem;
     z-index: 1200;
     margin: 30px 30px;
 
 }
 
 .close i:hover{
-    color: #f51301;
+    color:rgba(255, 255, 255, 0.242);
 
 }
 
@@ -44,19 +57,21 @@
 .menu_list{
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 35%;
     list-style: none;
     font-size: 10rem;
+    text-align: center;
     
    
 }
 .menu_list a{
     text-decoration: none;
-    color: black;
+    color: white;
+    
 }
 
 .menu_list a:hover{
     text-decoration: none;
-    color: #f51301;
+    color:rgba(255, 255, 255, 0.242);
     transition: color 0.2s ease-in;
 }

@@ -1,0 +1,31 @@
+<div class="container">
+    <section>
+        <h1 class="main_title">Registreison</h1>
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+            <div class="form-group row">
+                <label class="col-2 col-form-label">Username</label>
+                <input type="text" formControlName="name" class="form-control">
+            </div>
+
+            <div class="form-group row">
+                <label class="col-2 col-form-label">Email</label>
+                <input type="text" formControlName="email" class="form-control">
+            </div>
+
+            <div class="form-group row">
+                <label class="col-2 col-form-label">Password</label>
+                <input type="password" formControlName="password" class="form-control">
+            </div>
+
+            <div class="form-group row">
+                <label class="col-2 col-form-label">Repeat Password</label>
+                <input type="password" formControlName="repeat_password" class="form-control">
+            </div>
+
+            <div class="col-8 offset-05">
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            </div>
+        </form>
+    </section>
+</div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-menu',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 export class MenuComponent implements OnInit {
   mostrarMenu: boolean;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private userService: UserService) {
     this.mostrarMenu = false;
     router.events.subscribe((event) => {
       this.mostrarMenu = false;
