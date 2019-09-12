@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'evento/update/:id', component: EventUpdateComponent, canActivate: [LoginGuard] },
 
   // rutas de los teatros
-  { path: 'location/create', component: LocationCreateComponent, canActivate: [LoginGuard] },
+  { path: 'location/create/user_id', component: LocationCreateComponent, canActivate: [LoginGuard] },
   { path: 'location/update/:id', component: LocationUpdateComponent, canActivate: [LoginGuard] },
 
   //rutas de los users

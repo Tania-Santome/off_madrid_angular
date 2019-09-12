@@ -21,6 +21,10 @@ export class EventUpdateComponent implements OnInit {
       location_id: new FormControl("", [
         Validators.required
       ]),
+      user_id: new FormControl('', [
+        Validators.required
+      ]),
+
 
       name: new FormControl("", [
         Validators.required,
@@ -67,10 +71,10 @@ export class EventUpdateComponent implements OnInit {
 
   ngOnInit() {
 
+    this.formulario.controls['user_id'].setValue(localStorage.getItem('user_id'));
+
     this.activatedRoute.params.subscribe(params => {
-
-
-
+      console.log(params);
       this.eventService.getById(params.id)
         .then(response => {
 

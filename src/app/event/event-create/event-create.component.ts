@@ -18,7 +18,10 @@ export class EventCreateComponent implements OnInit {
   constructor(private eventService: EventService, private activatedRoute: ActivatedRoute, private router: Router) {
     this.formulario = new FormGroup({
 
-      location_id: new FormControl(1, [
+      location_id: new FormControl('', [
+        Validators.required
+      ]),
+      user_id: new FormControl('', [
         Validators.required
       ]),
 
@@ -60,18 +63,29 @@ export class EventCreateComponent implements OnInit {
     })
 
   }
+
   /**
    * 
    */
 
   ngOnInit() {
+
+    this.formulario.controls['user_id'].setValue(localStorage.getItem('user_id'));
+
+    this.activatedRoute.params.subscribe(params => {
+      console.log(params);
+      this.formulario.controls['location_id'].setValue(params.location_id);
+    });
   }
 
   onSubmit() {
 
+    console.log(this.formulario.value);
+
     this.eventService.createEvent(this.formulario.value)
       .then(response => {
-        console.log(response)
+        console.log(response);
+
       })
       .catch(error => {
         console.log(error)

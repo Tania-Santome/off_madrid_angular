@@ -31,9 +31,12 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     this.userService.login(this.formulario.value)
       .then(response => {
+        console.log(response);
         if (response['token']) {
           localStorage.setItem('user-token', response['token']);
-          console.log("Chachi");
+          localStorage.setItem('user_id', response['user_id']);
+
+
 
           // Redirigir a mi perfil
           this.router.navigate(['/users/profile'])

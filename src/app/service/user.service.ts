@@ -19,6 +19,15 @@ export class UserService {
     return this.http.post(`${this.url}/register`, user).toPromise();
   }
 
+  getLocationByUser(id: number): Promise<Location[]> {
+    return this.http.get<Location[]>(this.url + '/' + id + '/locations').toPromise();
+
+  }
+
+  getById(id: number): Promise<any> {
+    console.log('profile ok', id);
+    return this.http.get<Promise<any>>(this.url + '/' + id).toPromise();
+  }
 
   login(user: User): Promise<any> {
     return this.http.post(`${this.url}/login`, user).toPromise();

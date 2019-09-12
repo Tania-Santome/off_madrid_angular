@@ -3,9 +3,10 @@
         <h1 class="main_title">Editar {{evento.name}}</h1>
         <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
 
-            <input type="hidden" formControlName="location_id">
+            <input type="text" formControlName="location_id">
+            <input type="text" formControlName="user_id">
 
-            <input type="hidden" formControlName="id">
+
 
             <div class="form-group row">
                 <label class="col-4 col-form-label">Name</label>

@@ -95,11 +95,21 @@ a:hover{
     flex-wrap: wrap;
 }
 
+.col-12{
+    width: 100%;
+}
+
+.col-10{
+ width: 80%;
+}
+
 .col-8{
     width: 60%;
+
 }
 .col-6{
     width: 50%;
+   
 
 }
 
@@ -174,6 +184,7 @@ padding: 1rem;
 }
 /* componentes, botones */
 .btn{
+    display: inline-block;
     padding: 1rem;
     font-family: inherit;
     font-size: inherit;
