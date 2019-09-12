@@ -17,6 +17,9 @@ import { ShowEventComponent } from './event/show-event/show-event.component';
 import { EventUpdateComponent } from './event/event-update/event-update.component';
 import { LocationCreateComponent } from './location/location-create/location-create.component';
 import { LocationUpdateComponent } from './location/location-update/location-update.component';
+import { LoginComponent } from './users/login/login.component';
+import { RegisterComponent } from './users/register/register.component';
+import { ProfileComponent } from './users/profile/profile.component';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { LocationUpdateComponent } from './location/location-update/location-upd
     ShowEventComponent,
     EventUpdateComponent,
     LocationCreateComponent,
-    LocationUpdateComponent
+    LocationUpdateComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

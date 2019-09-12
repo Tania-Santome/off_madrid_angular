@@ -138,6 +138,14 @@ padding: 1rem;
 .offset-4{
     margin-left:30%;
 }
+
+.offset-05{
+    margin-left:16.5%;
+}
+
+.offset-6{
+    margin-left:50%;
+}
 /* componentes de formularios */
 
 .form-group{

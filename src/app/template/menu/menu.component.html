@@ -1,3 +1,7 @@
+<a class="avatar" routerLink="/users/profile" *ngIf="userService.isUserLogged()">&#9786;</a>
+<a class="avatar" routerLink="/users/login" *ngIf="!userService.isUserLogged()">&#9785;</a>
+
+
 <a class="hamburguer" (click)="showMenu()">
     <i class="fa fa-bars"></i>
 </a>

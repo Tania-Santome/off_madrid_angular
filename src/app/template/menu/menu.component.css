@@ -4,6 +4,17 @@
     right: 3rem;
     top: 3rem;
     z-index: 10;
+    
+}
+
+.avatar{
+    font-size: 9rem;
+    position: fixed;
+    left: 3rem;
+    top: 3rem;
+    z-index: 10;
+    color: tomato;
+    
 }
 
 .menu{

@@ -8,6 +8,10 @@ import { ShowEventComponent } from './event/show-event/show-event.component';
 import { EventUpdateComponent } from './event/event-update/event-update.component';
 import { LocationCreateComponent } from './location/location-create/location-create.component';
 import { LocationUpdateComponent } from './location/location-update/location-update.component';
+import { LoginComponent } from './users/login/login.component';
+import { RegisterComponent } from './users/register/register.component';
+import { ProfileComponent } from './users/profile/profile.component';
+import { LoginGuard } from './login.guard';
 
 
 const routes: Routes = [
@@ -20,14 +24,18 @@ const routes: Routes = [
 
   // rutas de los eventos
 
-  { path: 'evento/create', component: EventCreateComponent },
-  { path: 'evento/:id', component: ShowEventComponent },
-  { path: 'evento/update/:id', component: EventUpdateComponent },
+  { path: 'evento/create', component: EventCreateComponent, canActivate: [LoginGuard] },
+  { path: 'evento/:id', component: ShowEventComponent, canActivate: [LoginGuard] },
+  { path: 'evento/update/:id', component: EventUpdateComponent, canActivate: [LoginGuard] },
 
   // rutas de los teatros
-  { path: 'location/create', component: LocationCreateComponent },
-  { path: 'location/update/:id', component: LocationUpdateComponent },
+  { path: 'location/create', component: LocationCreateComponent, canActivate: [LoginGuard] },
+  { path: 'location/update/:id', component: LocationUpdateComponent, canActivate: [LoginGuard] },
 
+  //rutas de los users
+  { path: 'users/login', component: LoginComponent },
+  { path: 'users/register', component: RegisterComponent },
+  { path: 'users/profile', component: ProfileComponent, canActivate: [LoginGuard] },
 
 ];
 
