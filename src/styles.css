@@ -49,6 +49,10 @@ body {
 
 }
 
+.about_title{
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
 
 p {
     font-size: 1.6rem;
@@ -184,9 +188,20 @@ padding: 1rem;
 /* layaut */
 section{
 
-    background-color: rgba(255, 255, 255, 0.571);
+    background-color: rgba(255, 249, 242, 0.685);
     margin-top: 10rem;
     margin-bottom: 20rem;
     padding: 2rem;
     min-height: 60rem;
+}
+
+.layoutStyle{
+
+    margin-top: 2rem;
+    margin-bottom: 20rem;
+    padding: 7rem;
+    min-height: 60rem;
+    font-size: 1.8rem;
+    line-height : 3.3rem;
+    
 }

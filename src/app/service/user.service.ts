@@ -16,8 +16,9 @@ export class UserService {
   }
 
   createUser(user: User): Promise<any> {
-    return this.http.post<any>(this.url, user).toPromise();
+    return this.http.post(`${this.url}/register`, user).toPromise();
   }
+
 
   login(user: User): Promise<any> {
     return this.http.post(`${this.url}/login`, user).toPromise();
