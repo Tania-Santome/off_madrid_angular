@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../model/User';
 import { HttpClient } from '@angular/common/http';
+import { Location } from '../model/Location';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,6 @@ export class UserService {
 
   getLocationByUser(id: number): Promise<Location[]> {
     return this.http.get<Location[]>(this.url + '/' + id + '/locations').toPromise();
-
   }
 
   getById(id: number): Promise<any> {
