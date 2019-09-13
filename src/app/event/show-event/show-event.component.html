@@ -1,10 +1,11 @@
 <div class="container">
     <section>
-        <nav>
+        <!-- ver esto con Mr.Zekeriev -->
+        <!-- <nav>
             <a routerLink="/main">HOME</a>
             <span> &gt; </span>
             <a [routerLink]="['evento', evento.id]">{{evento.name}}</a>
-        </nav>
+        </nav> -->
         <div class="row">
             <div class="col-6 p-2">
                 <img [src]="rutaCompletaImagen(evento.image)" [alt]="evento.name">
@@ -14,10 +15,10 @@
                 <p>{{evento.description}}</p>
             </div>
             <div class="col-6 p-2">
-                <a [routerLink]="['/evento/update', evento.id]" class="btn btn-primary">Editar</a>
+                <a [routerLink]="['/evento/update', evento.id]" class="btn btn-primary">Edit</a>
                 &nbsp;
                 <!-- esta funcion se llama en el comp.ts -->
-                <a (click)="deleteEvent(evento)" class="btn btn-primary">Borrar</a>
+                <a (click)="deleteEvent(evento)" class="btn btn-primary">Delete</a>
             </div>
         </div>
     </section>

@@ -1,7 +1,9 @@
-<a class="avatar" routerLink="/users/profile" *ngIf="userService.isUserLogged()">Login</a>
-<a class="avatar" routerLink="/users/login" *ngIf="!userService.isUserLogged()">Logout</a>
+<a class="avatar" routerLink="/users/profile" *ngIf="userService.isUserLogged()">My Site</a>
+<a class="avatar" routerLink="/users/login" *ngIf="!userService.isUserLogged()">Login</a>
+<a class="avatardos" routerLink="/users/register" *ngIf="!userService.isUserLogged()">Register</a>
+<a href="#"><img class="logo" src="assets/images/logo.png"></a>
 
-<!-- &#9786;&#9785; -->
+
 
 
 <a class="hamburguer" (click)="showMenu()">

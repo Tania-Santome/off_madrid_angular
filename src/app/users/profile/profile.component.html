@@ -3,31 +3,32 @@
 
         <div class="row">
             <div class="col-2 ">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Bundesarchiv_Bild_183-18073-0003%2C_Konstantin_Sergejewitsch_Stanislawski.jpg"
-                    class="c" alt="avatar">
+                <img src="https://cdnb.20m.es/ciencias-mixtas/files/2014/11/367px-Hedy_Lamarr-publicity.jpg" class="c"
+                    alt="avatar">
             </div>
+
             <div class="col-10 p-2">
                 <ul>
-                    <li>Name:{{user.name}}</li>
-                    <li>E-mail:{{user.email}}</li>
-                    <li>Description:</li>
-                </ul>
+                    <li>Name: {{user.name}}</li>
+                    <li>E-mail: {{user.email}}</li>
+                    <li>Description: </li>
+                </ul> <br>
                 <button class="btn btn-primary" (click)="logout()">Logout</button> &nbsp;
-                <a class="btn btn-primary" [routerLink]="['/location/create']">Crear Teatro</a>
+                <a class="btn btn-primary" [routerLink]="['/location/create']">Create theatre</a>
             </div>
-        </div>
+        </div> <br>
 
 
 
 
         <div class="row" *ngFor="let location of locations">
-            <div class="col-6">
+            <div class="col-6 description">
                 <h2>{{location.name}}</h2>
-                <p>{{location.description}}</p>
+                <p>{{location.description}}</p><br>
 
-                <a class="btn btn-primary" [routerLink]="['/location/update',location.id]">Editar
+                <a class="btn btn-primary" [routerLink]="['/location/update',location.id]">Edit
                     {{ location.name }}</a> &nbsp;
-                <a class="btn btn-primary" [routerLink]="['/evento/create', location.id]">Crear Evento</a>
+                <a class="btn btn-primary" [routerLink]="['/evento/create', location.id]">Create event </a>
 
 
             </div>

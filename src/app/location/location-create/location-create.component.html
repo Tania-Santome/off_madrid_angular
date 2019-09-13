@@ -1,6 +1,7 @@
-<div class="container">
+<div class="container ">
     <section>
-        <h1 class="main_title">Crear teatrillo chuchis</h1>
+        <h1 class="main_title">Create theatre</h1>
+
         <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
 
             <input type="hidden" formControlName="user_id">
@@ -15,14 +16,14 @@
 
 
             <div class="form-group row">
-                <label class="col-4 col-form-label">Imagen</label>
+                <label class="col-4 col-form-label">Image</label>
                 <div class="col-8">
                     <input type="text" class="form-control" formControlName="image">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-4 col-form-label">Sinopsis</label>
+                <label class="col-4 col-form-label">Synopsis</label>
                 <div class="col-8">
                     <input type="text" class="form-control" formControlName="description">
                 </div>
@@ -38,7 +39,7 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-4 col-form-label">Ciudad</label>
+                <label class="col-4 col-form-label">City</label>
                 <div class="col-8">
                     <input type="text" class="form-control" formControlName="city">
                 </div>
@@ -52,21 +53,21 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-4 col-form-label">Dirección</label>
+                <label class="col-4 col-form-label">Address</label>
                 <div class="col-8">
                     <input type="text" class="form-control" formControlName="address">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-4 col-form-label">Latitud</label>
+                <label class="col-4 col-form-label">Lat</label>
                 <div class="col-8">
                     <input type=number class="form-control" formControlName="lat">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-4 col-form-label">Longitud</label>
+                <label class="col-4 col-form-label">Lng</label>
                 <div class="col-8">
                     <input type=number class="form-control" formControlName="lng">
                 </div>
@@ -81,14 +82,14 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-4 col-form-label">Capacidad</label>
+                <label class="col-4 col-form-label">Capacity</label>
                 <div class="col-8">
                     <input type="text" class="form-control" formControlName="capacity">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-4 col-form-label">Teléfono</label>
+                <label class="col-4 col-form-label">Phone</label>
                 <div class="col-8">
                     <input type=number class="form-control" formControlName="phone">
                 </div>
@@ -108,5 +109,6 @@
                     <button class="btn btn-primary" type="submit">Enter</button></div>
             </div>
         </form>
+
     </section>
 </div>

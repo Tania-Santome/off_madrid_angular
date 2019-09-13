@@ -4,19 +4,37 @@
     right: 3rem;
     top: 3rem;
     z-index: 10;
+    color: black;
     
 }
-
+.hamburguer:hover{
+    color: #f51301;
+}
 .avatar{
-    font-size: 9rem;
+    font-size: 1.7rem;
     position: fixed;
-    left: 3rem;
-    top: 3rem;
+    left: 8.5rem;
+    top: 3.5rem;
     z-index: 10;
-    color: tomato;
+    color: #f51301;
+    
+}
+.avatardos{
+    font-size: 1.7rem;
+    position: fixed;
+    left: 15rem;
+    top: 3.5rem;
+    z-index: 10;
+    color: #f51301;
     
 }
 
+.avatar:hover{
+    color: #ffffff; 
+}
+.avatardos:hover{
+    color: #ffffff; 
+}
 .menu{
     
     display: none;
@@ -75,3 +93,13 @@
     color:rgba(255, 255, 255, 0.242);
     transition: color 0.2s ease-in;
 }
+.logo{
+   
+        position: fixed;
+        left: 2rem;
+        top: 1rem;
+       width: 6rem;
+        
+}
+
+

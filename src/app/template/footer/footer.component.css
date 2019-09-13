@@ -6,6 +6,7 @@
   
 .social-footer__logo {
     margin-left: 5rem;
+    width: 6rem;
 }
 
 .social-footer__icons {
@@ -31,4 +32,10 @@
   .social-footer__icons .fa:hover {
     color: #ff0000;
     transition: color 0.2s ease-in;
+  }
+
+.copyright{
+      color: #ffffff;
+      font-size: 1.5rem;
+      padding-top: 7rem;
   }

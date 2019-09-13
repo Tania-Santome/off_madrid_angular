@@ -36,6 +36,7 @@ export class RegisterComponent implements OnInit {
     this.userService.createUser(this.formulario.value)
       .then(response => {
         console.log(response)
+        this.router.navigate(['/users/profile'])
       })
       .catch(error => {
         console.log(error)

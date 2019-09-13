@@ -35,8 +35,8 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
-   font-family:  'Hepta Slab', serif;
+    font-size: 2rem;
+    font-family:  'Hepta Slab', serif;
     background-image: url("assets/images/aaa.jpeg");
     background-position: top;
     background-size: cover;
@@ -45,7 +45,7 @@ body {
 
 .main_title{
 
-    font-size: 6rem;
+    font-size: 5rem;
 
 }
 
@@ -54,12 +54,14 @@ body {
     font-weight: bolder;
 }
 
+
+
 p {
     font-size: 1.6rem;
 }
 a{
     text-decoration: none;
-    color: black
+    color: rgb(128, 125, 125);
 }
 a:hover{
     text-decoration: none;
@@ -144,6 +146,7 @@ padding: 1rem;
 .py-2{
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 1rem;
 }
 /* helpers */
 .center{
@@ -171,7 +174,7 @@ padding: 1rem;
     width: 80%;
     font-family: inherit;
     font-size: inherit;
-    border: 2px solid #980a10
+    border: 2px solid #b80a13
 
 }
 
@@ -191,15 +194,18 @@ padding: 1rem;
     border: 2px solid white;
 }
 .btn-primary{
-    border: 2px solid #980a10;
+    border: 2px solid #b80a13;
     color:  white;
-    background-color: #980a10;
+    background-color: #b80a13;
+}
+.btn-primary:hover{
+    color:black;
 }
 
 /* layaut */
 section{
 
-    background-color: rgba(255, 249, 242, 0.685);
+    background-color: rgba(254, 252, 251, 0.892);
     margin-top: 10rem;
     margin-bottom: 20rem;
     padding: 2rem;
@@ -215,4 +221,9 @@ section{
     font-size: 1.8rem;
     line-height : 3.3rem;
     
+}
+
+.layoutTheatre{
+    padding-top: 3rem;
+    padding-right: 3rem;
 }

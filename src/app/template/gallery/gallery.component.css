@@ -4,7 +4,7 @@
 .gallery__item{
     position: relative;
     overflow: hidden;
-   
+    
     
 }
 .gallery__description{
@@ -16,10 +16,11 @@
     right: 0em;
     left: 0em;
     color: white;
+    padding: 1.5rem;
     font-size: 18px;
     transition: all .5s;
 }
 .gallery__description:hover{
     opacity: 1;
-    background-color: #f51101d9;
+    background-color: #000000c4;
 }

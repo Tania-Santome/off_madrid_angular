@@ -1,29 +1,28 @@
 <div class="container">
     <section>
-        <h1 class="main_title">Autentifiqueison</h1>
-        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <h1 class="main_title">Authentification</h1>
+        <div class="layoutStyle">
+            <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
 
-
-
-
-            <div class="form-group row">
-                <label class="col-4 col-form-label">E-mail</label>
-                <div class="col-8">
-                    <input type="text" class="form-control" formControlName="email">
+                <div class="form-group row ">
+                    <label class="col-4 col-form-label">E-mail</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" formControlName="email">
+                    </div>
                 </div>
-            </div>
 
-            <div class="form-group row">
-                <label class="col-4 col-form-label">Password</label>
-                <div class="col-8">
-                    <input type="password" class="form-control" formControlName="password">
+                <div class="form-group row">
+                    <label class="col-4 col-form-label">Password</label>
+                    <div class="col-8">
+                        <input type="password" class="form-control" formControlName="password">
+                    </div>
                 </div>
-            </div>
 
-            <div class="form-group row">
-                <div class="col-8 offset-4">
-                    <button class="btn btn-primary" type="submit">Login</button></div>
-            </div>
-        </form>
+                <div class="form-group row">
+                    <div class="col-8 offset-4">
+                        <button class="btn btn-primary" type="submit">Login</button></div>
+                </div>
+            </form>
+        </div>
     </section>
 </div>
