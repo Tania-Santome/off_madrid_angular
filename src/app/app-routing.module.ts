@@ -24,12 +24,12 @@ const routes: Routes = [
 
   // rutas de los eventos
 
-  { path: 'evento/create', component: EventCreateComponent, canActivate: [LoginGuard] },
+  { path: 'evento/create/:location_id', component: EventCreateComponent, canActivate: [LoginGuard] },
   { path: 'evento/:id', component: ShowEventComponent, canActivate: [LoginGuard] },
   { path: 'evento/update/:id', component: EventUpdateComponent, canActivate: [LoginGuard] },
 
   // rutas de los teatros
-  { path: 'location/create/user_id', component: LocationCreateComponent, canActivate: [LoginGuard] },
+  { path: 'location/create', component: LocationCreateComponent, canActivate: [LoginGuard] },
   { path: 'location/update/:id', component: LocationUpdateComponent, canActivate: [LoginGuard] },
 
   //rutas de los users

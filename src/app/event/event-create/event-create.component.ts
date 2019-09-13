@@ -85,6 +85,7 @@ export class EventCreateComponent implements OnInit {
     this.eventService.createEvent(this.formulario.value)
       .then(response => {
         console.log(response);
+        this.router.navigate(['/users/profile']);
 
       })
       .catch(error => {

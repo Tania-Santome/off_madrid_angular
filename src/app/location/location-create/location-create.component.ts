@@ -86,7 +86,9 @@ export class LocationCreateComponent implements OnInit {
 
     this.locationService.createLocation(this.formulario.value)
       .then(response => {
-        console.log(response)
+        console.log(response);
+        this.router.navigate(['/users/profile']);
+
       })
       .catch(error => {
         console.log(error)
