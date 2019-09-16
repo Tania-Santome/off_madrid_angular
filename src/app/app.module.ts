@@ -20,6 +20,7 @@ import { LocationUpdateComponent } from './location/location-update/location-upd
 import { LoginComponent } from './users/login/login.component';
 import { RegisterComponent } from './users/register/register.component';
 import { ProfileComponent } from './users/profile/profile.component';
+import { MapsComponent } from './pages/maps/maps.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ProfileComponent } from './users/profile/profile.component';
     LocationUpdateComponent,
     LoginComponent,
     RegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    MapsComponent
   ],
   imports: [
     BrowserModule,

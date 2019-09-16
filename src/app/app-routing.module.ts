@@ -12,6 +12,7 @@ import { LoginComponent } from './users/login/login.component';
 import { RegisterComponent } from './users/register/register.component';
 import { ProfileComponent } from './users/profile/profile.component';
 import { LoginGuard } from './login.guard';
+import { MapsComponent } from './pages/maps/maps.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full' },
   { path: 'main', component: MainComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'maps', component: MapsComponent },
   { path: 'teatros', component: TheatreComponent },
 
   // rutas de los eventos

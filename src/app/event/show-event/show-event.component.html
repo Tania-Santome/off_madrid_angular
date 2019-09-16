@@ -14,12 +14,7 @@
                 <h1>{{evento.name}}</h1>
                 <p>{{evento.description}}</p>
             </div>
-            <div class="col-6 p-2">
-                <a [routerLink]="['/evento/update', evento.id]" class="btn btn-primary">Edit</a>
-                &nbsp;
-                <!-- esta funcion se llama en el comp.ts -->
-                <a (click)="deleteEvent(evento)" class="btn btn-primary">Delete</a>
-            </div>
+
         </div>
     </section>
 </div>
