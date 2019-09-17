@@ -8,18 +8,9 @@
     outline: none;
 }
 
-/*
-    1rem = 10px on regular devices
-*/
+/* 1rem = 10px on regular devices */
 html {
     font-size: 62.5%;
-}
-
-/* 1rem = 8px in small devices */
-@media (max-width: 600px) {
-    html {
-        font-size: 50%;
-    }
 }
 
 /* esto es para que las imagenes se ajusten al contenedor que les hemos designado */

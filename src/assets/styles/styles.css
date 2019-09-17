@@ -26,6 +26,10 @@ body {
     align-items: center;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .up{
     padding-top: 4rem;
 }

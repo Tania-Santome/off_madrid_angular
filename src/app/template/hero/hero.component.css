@@ -4,6 +4,7 @@
     
     position: relative;
 }
+
 .hero_center{
     position: absolute;
     top: 50%;
@@ -14,10 +15,18 @@
     /*esto es para cenrarlo del todo*/
     transform: translate(-50%,-50%)
 }
-.hero_center h1{
+
+.hero_center h1 {
    
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'abril_fatfaceregular', cursive;
     font-size: 26.5rem;
     letter-spacing: 0.8rem;
     color: #f51301;
+}
+
+/* Medium Devices */
+@media (max-width: 800px) {
+    .hero_center h1 {
+        font-size: 18rem;
+    }
 }

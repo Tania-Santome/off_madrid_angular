@@ -10,10 +10,7 @@
 }
 
 .social-footer__icons {
-
-    background-color:black;
-    
-    
+    background-color:black;  
 }
 
 .social-footer__icons a {
@@ -35,7 +32,24 @@
   }
 
 .copyright{
+    text-align: center;
       color: #ffffff;
       font-size: 1.5rem;
-      padding-top: 7rem;
-  }
+}
+
+@media (max-width: 500px) {
+    .social-footer__icons {
+        width: 100%;
+    }
+
+    .social-footer__logo {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .social-footer__logo img {
+        width: 100px;
+        margin: 2rem auto;
+    }
+}

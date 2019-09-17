@@ -24,3 +24,11 @@
     opacity: 1;
     background-color: #000000c4;
 }
+
+
+@media (max-width: 600px) {
+    .gallery__description{
+        opacity: 1;
+        background-color: #000000c4;
+    }
+}
