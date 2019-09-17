@@ -4,12 +4,13 @@
     right: 3rem;
     top: 3rem;
     z-index: 10;
-    color: black;
-    
+    color: #f51301;   
 }
+
 .hamburguer:hover{
     color: #f51301;
 }
+
 .avatar{
     font-size: 1.7rem;
     position: fixed;
@@ -19,6 +20,7 @@
     color: #f51301;
     
 }
+
 .avatardos{
     font-size: 1.7rem;
     position: fixed;

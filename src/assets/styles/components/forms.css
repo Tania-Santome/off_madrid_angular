@@ -1,0 +1,18 @@
+/* Components form, bootstrap */
+
+.form-group {
+    padding: 2rem 0;
+}
+
+.form-group input {
+    padding: 1rem;
+    width: 80%;
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid #b80a13
+}
+
+.col-form-label {
+    padding: 1rem;
+    text-align: right;
+}

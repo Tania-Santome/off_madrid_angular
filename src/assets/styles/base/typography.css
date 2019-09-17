@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'abril_fatfaceregular';
+    src:url('../../fonts/AbrilFatface-Regular.otf') format('otf'), 
+    url('../../fonts/abrilfatface-regular.woff') format('woff2'),
+         url('../../fonts/abrilfatface-regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-size: 2rem;
+    font-family:  'Hepta Slab', serif;
+}
+
+.main_title {
+    font-size: 5rem;
+}
+
+.about_title {
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(128, 125, 125);
+}
+
+a:hover{
+    text-decoration: none;
+    color: #f51301;
+}

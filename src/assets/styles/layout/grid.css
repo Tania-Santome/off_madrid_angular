@@ -1,0 +1,72 @@
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    width: 110rem;
+    margin: 0 auto;
+}
+
+.row {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-10 {
+ width: 80%;
+}
+
+.col-8 {
+    width: 60%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 30%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+/* Medium Devices */
+@media (max-width: 800px) {
+    
+    .container {
+        width: 70rem;
+        margin: 0 auto;
+    }
+
+    .col-md-4 {
+        width: 33.3%;
+    }
+}
+
+/* Small Devices */
+@media (max-width: 600px) {
+
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+}

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*
+    1rem = 10px on regular devices
+*/
+html {
+    font-size: 62.5%;
+}
+
+/* 1rem = 8px in small devices */
+@media (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/* esto es para que las imagenes se ajusten al contenedor que les hemos designado */
+img {
+    width: 100%;
+    display: block;
+}

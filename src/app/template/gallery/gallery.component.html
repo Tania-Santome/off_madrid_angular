@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row up">
 
-            <div class="col-3 p-05 " *ngFor="let evento of listaEventos">
+            <div class="col-3 col-md-4 col-sm-12 p-05 " *ngFor="let evento of listaEventos">
                 <div class="gallery__item">
                     <img [src]="rutaCompletaImagen(evento.image)" [alt]="evento.name">
                     <div class="gallery__description">

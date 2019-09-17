@@ -1,0 +1,18 @@
+/* Button component, like angular */
+.btn {
+    display: inline-block;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid white;
+}
+
+.btn-primary{
+    border: 2px solid #b80a13;
+    color:  white;
+    background-color: #b80a13;
+}
+
+.btn-primary:hover{
+    color:black;
+}
