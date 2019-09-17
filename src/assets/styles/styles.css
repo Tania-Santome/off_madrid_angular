@@ -9,7 +9,11 @@
 body {
     background-image: url("../images/aaa.jpeg");
     background-position: top;
-    background-size: cover;
+    background-size: contain;
+    
+    
+   
+    
 }
 
 /*griddddd*/
